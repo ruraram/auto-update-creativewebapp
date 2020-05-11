@@ -9,7 +9,8 @@ console.log("hello world :o");
 const festsList = document.getElementById("fests");
 
 function appendNewFest(fest) {
-  const newListItem = document.createElement("button");
+  const newListItem = document.createElement("input");
+  newListItem.innerText = fest;
   newListItem.innerText = fest;
   festsList.appendChild(newListItem);
 }
