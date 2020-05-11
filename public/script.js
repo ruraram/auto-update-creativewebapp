@@ -6,6 +6,7 @@ console.log("hello world :o");
 // define variables that reference elements on our page
 const dreamsList = document.getElementById("dreams");
 const dreamsForm = document.querySelector("form");
+const festlist = 
 
 // a helper function that creates a list item for a given dream
 function appendNewDream(dream) {
@@ -13,6 +14,9 @@ function appendNewDream(dream) {
   newListItem.innerText = dream;
   dreamsList.appendChild(newListItem);
 }
+
+
+
 
 // fetch the initial list of dreams
 fetch("/dreams")
