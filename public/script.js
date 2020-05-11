@@ -10,8 +10,8 @@ const festsList = document.getElementById("fests");
 
 function appendNewFest(fest) {
   const newListItem = document.createElement("button");
-  newListItem.innerText = fest[1];
-  newListItem.images
+  newListItem.innerText = fest[0];
+  newListItem.createElement("img").setAttribute("src", fest[1]);
   festsList.appendChild(newListItem);
 }
 
