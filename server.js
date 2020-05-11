@@ -10,10 +10,10 @@ const app = express();
 const dreams = [
   "Find and count some sheep",
   "Climb a really tall mountain",
-  "Wash the dishes"
+  "Wash the dishbnbes"
 ];
 
-cons
+const fests = ["parklife", "citadel", "lovebox"];
 // make all the files in 'public' available
 // https://expressjs.com/en/starter/static-files.html
 app.use(express.static("public"));
@@ -27,6 +27,11 @@ app.get("/", (request, response) => {
 app.get("/dreams", (request, response) => {
   // express helps us take JS objects and send them as JSON
   response.json(dreams);
+});
+// send the default array of dreams to the webpage
+app.get("/fests", (request, response) => {
+  // express helps us take JS objects and send them as JSON
+  response.json(fests);
 });
 
 // listen for requests :)
