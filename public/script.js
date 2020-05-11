@@ -11,7 +11,7 @@ const festsList = document.getElementById("fests");
 function appendNewFest(fest) {
   const newListItem = document.createElement("input");
   newListItem.innerText = fest;
-  newListItem.innerText = fest;
+  newListItem.images
   festsList.appendChild(newListItem);
 }
 
