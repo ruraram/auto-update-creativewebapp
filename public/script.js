@@ -18,7 +18,7 @@ function appendNewFest(fest) {
 }
 function getPage() {
   const test=document.createElement("li");
-  test.innerText= "test";
+  test.innerText = "tes";
   
 }
 fetch("/fests")
