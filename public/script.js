@@ -12,11 +12,15 @@ function appendNewFest(fest) {
   const newListItem = document.createElement("input");
   newListItem.src = fest[1];
   newListItem.type="image";
-  newListItem.onclick="https://www.asos.com/women/";
+  newListItem.onclick= "getPage()";
   //logo.setAttribute("src", "https://cdn.glitch.com/0eac1b7f-36d6-47d9-9e09-471cbcc4ebc9%2Fparklifelogo.jpg?v=1589236232049");
   festsList.appendChild(newListItem);
 }
-
+function getPage() {
+  const test=document.createElement("li");
+  test.innerText= "test";
+  
+}
 fetch("/fests")
   .then(response => response.json()) // parse the JSON from the server
   .then(fests => {
