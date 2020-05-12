@@ -17,8 +17,7 @@ function appendNewFest(fest) {
   festsList.appendChild(newListItem);
 }
 function getPage() {
-  const test=document.createElement("li");
-  test.innerText = "tes";
+  window.location.href = "planets/"
   
 }
 fetch("/fests")
